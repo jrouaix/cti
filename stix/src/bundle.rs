@@ -4,11 +4,11 @@ use crate::{Id, TypedObject};
 
 #[derive(Deserialize)]
 pub struct Bundle<T> {
-    pub id: Id,
-    pub spec_version: String,
-    pub objects: Vec<T>,
+  pub id: Id,
+  pub spec_version: Option<String>,
+  pub objects: Vec<T>,
 }
 
 impl<T> TypedObject for Bundle<T> {
-    const TYPE: &'static str = "bundle";
+  const TYPE: &'static str = "bundle";
 }
