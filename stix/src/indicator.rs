@@ -27,6 +27,7 @@ impl fmt::Display for Pattern {
 #[derive(Deserialize, stix_derive::TypedObject, Clone)]
 #[typed_object(core)]
 pub struct Indicator {
+  #[serde(flatten)]
   common: CommonProperties,
   #[serde(default)]
   pub name: Option<String>,
