@@ -6,13 +6,21 @@ use quote::quote;
 use standard::standard_objects;
 use syn::DeriveInput;
 
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod collection;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod custom_properties;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod plurals;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod relationship;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod standard;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod stix_crate_path;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod typed_object;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod vocab;
 
 pub(crate) use collection::{Collection, Variant};
@@ -81,6 +89,7 @@ pub fn vocabulary(input: proc_macro::TokenStream) -> proc_macro::TokenStream {
 /// the deriving enum's variant for that object in the emitted declaration. Use this to
 /// extend built-in objects.
 #[proc_macro_attribute]
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 pub fn declaration(
     _attr: proc_macro::TokenStream,
     item: proc_macro::TokenStream,

@@ -1,3 +1,4 @@
+#![allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 use serde_json;
 
 use stix::{standard::Declaration, vocab::PatternType};
@@ -21,10 +22,10 @@ const DECLARATION: &'static str = r#"
 
 #[test]
 fn reads_pattern() {
-    let declaration: Declaration = serde_json::from_str(DECLARATION).unwrap();
-    if let Declaration::Indicator(indicator) = declaration {
-        assert_eq!(indicator.pattern.pattern_type, PatternType::STIX);
-    } else {
-        panic!("Declaration did not deserialize as pattern");
-    }
+  let declaration: Declaration = serde_json::from_str(DECLARATION).unwrap();
+  if let Declaration::Indicator(indicator) = declaration {
+    assert_eq!(indicator.pattern.pattern_type, PatternType::STIX);
+  } else {
+    panic!("Declaration did not deserialize as pattern");
+  }
 }

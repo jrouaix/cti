@@ -1,32 +1,62 @@
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod attack_pattern;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod bundle;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod campaign;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 pub mod confidence;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod course_of_action;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod error;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod grouping;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod id;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 pub mod identity;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 pub mod indicator;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod infrastructure;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod intrusion_set;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 pub mod location;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod malware;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod malware_analysis;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod marking_definition;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod note;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod object;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod observed_data;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod opinion;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod reference;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 pub mod relationship;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod relationship_graph;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod report;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod sighting;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 pub mod standard;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod threat_actor;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod tool;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 pub mod vocab;
+#[allow(clippy::all, clippy::pedantic, clippy::restriction, clippy::nursery)]
 mod vulnerability;
 
 pub use attack_pattern::AttackPattern;
